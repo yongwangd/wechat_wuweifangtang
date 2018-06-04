@@ -1,0 +1,23 @@
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node app2.js`[39m
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+    at Error (native)
+Wechat app running on port 3000
+{ ToUserName: 'gh_b40547646d6b',
+  FromUserName: 'okLzawBEFe_X3bM-BQdAvy_PlTGE',
+  CreateTime: '1476754821',
+  MsgType: 'text',
+  Content: '温度',
+  MsgId: '6342613660856637339' }
+{ ToUserName: 'gh_b40547646d6b',
+  FromUserName: 'okLzawBEFe_X3bM-BQdAvy_PlTGE',
+  CreateTime: '1476754867',
+  MsgType: 'text',
+  Content: '温度',
+  MsgId: '6342613858425132990' }
