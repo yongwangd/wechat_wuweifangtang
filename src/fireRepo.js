@@ -6,8 +6,10 @@ const randomArrayItem = array =>
 const enhanceDataAccess = collectionName => {
   const access = createDataAccess(collectionName);
 
-  const checkExist = id =>
-    access.stream.map(items => items.find(it => it.id === id) != null);
+  const findById = id =>
+    access.stream.map(items => items.find(it => it.id === id));
+
+  const checkExist =id => findById(id).map(item => item != null);
 
   const newItem = (id, item) => access.ref.doc(id).set(item);
 
@@ -16,6 +18,7 @@ const enhanceDataAccess = collectionName => {
   return {
     ...access,
     checkExist,
+    findById,
     newItem,
     randomItem
   };
